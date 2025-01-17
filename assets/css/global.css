@@ -1,0 +1,77 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+/* Language selector button */
+    #lang-selector {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+  
+  .lang-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+  }
+  
+  .lang-button:hover {
+        background-color: #ccc;
+  }
+  
+/* Mobile First */
+/* Main informations */
+    
+    #main {
+        margin: 1rem;
+        padding: 1rem;
+        color: #fff;
+        border: 1px solid #FFF;
+        border-radius: 1rem;
+        max-width: 100vw;
+    }
+    #main::before, #main::after {
+        content: '';
+        background-image: url('../img/background.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        width: 140vw;
+        height: 100vh;
+        position: fixed;
+    }
+    /* Place the background-top underneath everything. */
+    #main::before {
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    /* Place the background-bottom underneath everything. */
+    #main::after {
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        transform: rotate(180deg); /* Very important property */
+    }
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    #main {
+        max-width: 1024px;
+        margin: 1rem auto;
+    }
+    #main::before, #main::after {
+        width: 70vw;
+
+    }
+}
+
