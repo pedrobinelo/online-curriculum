@@ -1,0 +1,54 @@
+#education {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.education-title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.education-description {
+    font-size: 0.825rem;
+}
+
+.education-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-logo img {
+    max-width: 25%;
+}
+
+/* Tablet or desktop */
+@media only screen and (min-width: 768px) {
+    #education li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .education-logo {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .education-logo img {
+        max-width: 30%;
+    }
+   
+}

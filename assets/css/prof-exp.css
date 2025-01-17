@@ -1,0 +1,36 @@
+#professional-experience {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+#professional-experience li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.prof-exp-title {
+    font-size: 1rem;
+    font-weight: 700;
+} 
+
+.work-time {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.825rem;
+    align-items: center;
+}
+.work-time::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+    background-image: url('../img/icons/calendar.svg');
+}
+.work-description {
+    font-size: 0.825rem;
+}

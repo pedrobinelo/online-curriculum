@@ -1,0 +1,22 @@
+#spoken-languages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;  /* Important property */
+    list-style: none;
+}
+#spoken-languages li {
+    padding-right: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+#spoken-languages li::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+    background-image: url('../img/icons/ok.svg');
+}
