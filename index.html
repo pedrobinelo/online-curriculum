@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/acordeon.css">
+    <link rel="stylesheet" href="./assets/css/languages-list.css">
+    <link rel="stylesheet" href="./assets/css/portfolio.css">
+    <link rel="stylesheet" href="./assets/css/prof-exp.css">
+    <link rel="stylesheet" href="./assets/css/skills.css">
+    <link rel="stylesheet" href="./assets/css/education.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main id="main">
+        <!-- Language Selector -->
+        <div id="language-selector">
+            <label for="language">Select Language:</label>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="pt">Português (BR)</option>
+            </select>
+        </div>
+
+        <header>
+            <!-- Profile photo -->
+            <div id="profile-photo">
+                <img id="photo" src="./assets/img/pedro_photo_ny.jpg" alt="Pedro Binelo profile picture">
+            </div>
+    
+            <h1 id="main-title" data-translate="main-title">Hello, I am Pedro Binelo</h1>
+    
+            <!-- Main information -->
+            <div class="main-info">
+                <p class="main-info-p" id="job" data-translate="job">Junior software developer</p>
+                <p class="main-info-p" id="location">Campo Grande - MS / Brazil</p>
+                <p class="main-info-p" id="phone">
+                    <a href="tel:+55 (67) 9 9102-1608">+55 (67) 99102-1608</a>
+                </p>
+                <p class="main-info-p" id="mail">
+                    <a href="mailto: pedro.binelo@ufms.br">pedro.binelo@ufms.br</a>
+                </p>
+            </div>
+        </header>
+
+        <!-- Skills, languages, education, portfolio, professional experience -->
+        
+        <section class="acordeon">
+            <!-- Skills -->
+            <button class="btn trigger" type="button">
+                Skills
+            </button>
+            <div class="content">
+                <div id="skills">
+                    <section id="tools">
+                        <h3>Professional skills:</h3>
+                        <ul>
+                            <li>
+                                <img src="./assets/img/icons/html.svg" alt="HTML" title="HTML" class="prof-skills-img">
+                            </li>
+                            <li>
+                                <img src="./assets/img/icons/css.svg" alt="CSS" title="CSS" class="prof-skills-img">
+                            </li>
+                            <li>
+                                <img src="./assets/img/icons/javascript.svg" alt="JavaScript" title="JavaScript" class="prof-skills-img">
+                            </li>
+                        </ul>
+                    </section>
+    
+                    <section id="personal-skills">
+                        <h3>Personal skills</h3>
+                        <ul>                          
+                            <li>Organization</li>
+                            <li>Communication</li>
+                            <li>Teamwork</li>
+                            <li>Commitment</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <!-- Languages -->
+            <button class="btn trigger" type="button">
+                Languages
+            </button>
+            <div class="content">
+                <ul id="spoken-languages">
+                    <li>Portuguese (BR)</li>
+                    <li>English</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <!-- Education -->
+            <button class="btn trigger" type="button">
+                Education
+            </button>
+            <div class="content">
+                <ul id="education">
+                    <li>
+                        <div class="education-content">
+                            <span class="education-title">Bachelor's Degree in Computer Engineering</span>
+                            <p class="education-description" >Federal University of Mato Grosso do Sul (UFMS)</p>
+                        </div>
+                        <div class="education-logo">
+                            <img src="./assets/img/icons/logo ufms preto.svg" alt="UFMS university logo">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="acordeon">
+            <!-- Portfolio -->
+            <button class="btn trigger" type="button">
+                Portfolio
+            </button>
+            <div class="content">
+                <ul id="portfolio">
+                    <li>
+                        <span class="portfolio-title github">Pokedex</span>
+                        <a href="https://github.com/pedrobinelo/PokedexDIO" target="_blank">Project repository</a>
+                    </li>
+                    <li>
+                        <span class="portfolio-title github">Curriculum</span>
+                        <a href="https://github.com/pedrobinelo/PokedexDIO" target="_blank">Project repository</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="acordeon">
+            <!-- Professional experience -->
+            <button class="btn trigger" type="button">
+                Professional experience
+            </button>
+            <div class="content">
+                <ul id="professional-experience">
+                    <li>
+                        <span class="prof-exp-title">Looking for the first opportunity!</span>
+                        <span class="work-time">Current</span>
+                        <p class="work-description">
+                            Looking for my first opportunity in front-end development.
+                        </p>
+                    </li>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JavaScript files -->
+    <script src="./assets/js/acordeon.js"></script>
+    <script src="./assets/js/language.js"></script>
+</body>
+</html>
