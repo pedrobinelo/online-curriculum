@@ -6,7 +6,7 @@ const translations = {
         selectLanguage: "Select language:",
         skills: "Skills",
         professionalSkills: "Professional skills:",
-        personalSkills: "Personal skills",
+        personalSkills: "Personal skills:",
         organization: "Organization",
         communication: "Communication",
         teamwork: "Teamwork",
@@ -18,6 +18,7 @@ const translations = {
         educationTitle: "Bachelor's Degree in Computer Engineering",
         educationDescription: "Federal University of Mato Grosso do Sul (UFMS)",
         portfolio: 'Portfolio',
+        projectRepository: 'Project repository',
         professionalExperience: "Professional experience",
         firstOpportunity: "Looking for the first opportunity!",
         current: "Current",
@@ -30,7 +31,7 @@ const translations = {
         selectLanguage: "Selecione o idioma:",
         skills: "Habilidades",
         professionalSkills: "Habilidades profissionais:",
-        personalSkills: "Habilidades pessoais",
+        personalSkills: "Habilidades pessoais:",
         organization: "Organização",
         communication: "Comunicação",
         teamwork: "Trabalho em equipe",
@@ -42,6 +43,7 @@ const translations = {
         educationTitle: "Bacharelado em Engenharia da Computação",
         educationDescription: "Universidade Federal de Mato Grosso do Sul (UFMS)",
         portfolio: 'Portfólio',
+        projectRepository: 'Repositório do projeto',
         professionalExperience: "Experiência profissional",
         firstOpportunity: "Buscando a primeira oportunidade!",
         current: "Atual",
@@ -61,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Skills section
         document.querySelector('button.trigger').textContent = translations[lang].skills;
         document.querySelector('#tools h3').textContent = translations[lang].professionalSkills;
+        document.querySelector('#personal-skills h3').textContent = translations[lang].personalSkills;
         const personalSkillsList = document.querySelectorAll("#personal-skills li");
         personalSkillsList[0].textContent = translations[lang].organization;
         personalSkillsList[1].textContent = translations[lang].communication;
@@ -84,7 +87,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
        // Portfolio section
        const portfolioButton = document.querySelectorAll(".btn.trigger")[3];
+       const repository = document.querySelectorAll(".repository");
        portfolioButton.textContent = translations[lang].portfolio;
+       repository.forEach(repo => {
+            repo.textContent = translations[lang].projectRepository;
+       });
 
         // Professional experience section
         const experienceButton = document.querySelectorAll(".btn.trigger")[4];
