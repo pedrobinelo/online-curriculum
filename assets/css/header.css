@@ -26,7 +26,7 @@
     }
 
     /* Place 3 dots icon */
-    header::after {
+    /* header::after {
         content: '';
         display: inline-block;
         position: absolute; 
@@ -37,7 +37,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-image: url('../img/icons/dots.svg');
-    }
+    } */
 
     /* Profile photo */
     #photo {
